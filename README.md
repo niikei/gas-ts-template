@@ -1,6 +1,6 @@
 # 🚀 GAS TypeScript + Vite Template
 
-[![TypeScript](https://img.shields.io/badge/typescript-007ACC?logo=typescript)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 [![vite](https://img.shields.io/badge/bundler-vite-blue)](https://vitejs.dev/)
 [![clasp](https://img.shields.io/badge/clasp-enabled-brightgreen)](https://github.com/google/clasp)
 [![Volta](https://img.shields.io/badge/volta-managed-4B32C3?logo=volta)](https://volta.sh)
