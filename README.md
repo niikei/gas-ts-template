@@ -9,6 +9,12 @@
 
 A minimal template for developing Google Apps Script (GAS) using **TypeScript**, **Vite**, and **clasp**.
 
+**⚠️ Warning:**
+
+This template is designed for **local development only**.  
+**Do not edit the script in the online Apps Script editor** once you start using this template.  
+Any changes made online will be **overwritten** by the local build output on the next push.
+
 ## ✨ Features
 
 - ✅ TypeScript with modern ESNext syntax
@@ -42,7 +48,7 @@ You have two options:
 #### **👉 Clone an existing project**
 
 ```bash
-npx clasp clone <script-id>
+npx clasp clone <script-id> --rootDir dist
 ```
 
 - The Script ID can be found in the **Project Settings** of your Apps Script project.  
@@ -51,7 +57,7 @@ npx clasp clone <script-id>
 #### **👉 Create a new project**
 
 ```bash
-npx clasp create --title "My Script" --type standalone
+npx clasp create --title "My Script" --type standalone --rootDir dist
 ```
 
 **Option Descriptions:**
@@ -66,7 +72,7 @@ You **must edit** the [`.clasp.json`](.clasp.json) to specify the correct build 
 ```json
 {
   "scriptId": "<your-script-id>",
-  "rootDir": "./dist"
+  "rootDir": "dist"
 }
 ```
 
@@ -90,6 +96,12 @@ or you can combine build and push:
 
 ```bash
 npm run push
+```
+
+### 6. Open the Apps Script project
+
+```bash
+npm run open
 ```
 
 ## 📁 Project Structure
