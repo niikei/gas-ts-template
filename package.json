@@ -1,0 +1,41 @@
+{
+  "name": "vite-gas-template",
+  "version": "1.0.0",
+  "description": "Google Apps Script development template with Vite and TypeScript",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "push": "npm run build && npx clasp push",
+    "push:only": "npx clasp push",
+    "build:watch": "vite build --watch",
+    "push:watch": "npx clasp push --watch",
+    "open": "npx clasp open-script",
+    "deploy": "npx clasp deploy",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/google-apps-script": "^1.0.55",
+    "@types/node": "^18.7.18",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@google/clasp": "^3.0.6-alpha",
+    "tslib": "^2.8.1",
+    "vite": "^6.3.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": "prettier --write"
+  },
+  "volta": {
+    "node": "22.16.0",
+    "npm": "11.4.1"
+  }
+}
