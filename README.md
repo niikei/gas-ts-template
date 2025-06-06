@@ -149,7 +149,6 @@ Keeps main.ts minimal and focused solely on exposing functions.
 ```text
 .clasp.json
 dist/
-.env
 ```
 
 Make sure to add `.clasp.json` to your `.gitignore` file to avoid committing sensitive information like your Script ID.
