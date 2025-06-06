@@ -177,4 +177,4 @@ Just make sure your local versions of Node.js and npm are close to the versions 
 - `globalThis.func = ...` is used to expose functions to GAS runtime.
 - This project supports module aliasing: use `@/` to refer to the `src/` directory for cleaner imports.
 - Git hook formatting is enabled using [Husky](https://typicode.github.io/husky) and [Prettier](https://prettier.io/), which auto-formats staged files on commit via `lint-staged`. If you prefer not to use it, you can safely delete the [`.husky/`](.husky) folder.
-- You can manage secrets or environment-specific variables using a `.env` file.
+- Use [Script Properties](https://developers.google.com/apps-script/guides/properties) to manage secrets like API keys. This is the most secure and recommended method in a GAS environment.
